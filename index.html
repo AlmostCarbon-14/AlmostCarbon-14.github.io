@@ -13051,13 +13051,13 @@ strong multicollinearity or other numerical problems.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">each</span><span class="p">)</span>
 <span class="n">estimate</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">test</span><span class="p">)</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">estimate</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">     TESTING ENERGY CONSUMPTION ON TEMP INFLUENCE</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span> <span class="o">*</span> <span class="mi">75</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">res</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">         TESTING ALL ON TEMP INFLUENCE</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span> <span class="o">*</span> <span class="mi">75</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">res</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -13074,7 +13074,7 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>		     TESTING ENERGY CONSUMPTION ON TEMP INFLUENCE
+<pre>		         TESTING ALL ON TEMP INFLUENCE
  --------------------------------------------------------------------------- 
 
                              OLS Regression Results                            
@@ -13083,7 +13083,7 @@ Dep. Variable:                      y   R-squared:                       0.612
 Model:                            OLS   Adj. R-squared:                  0.457
 Method:                 Least Squares   F-statistic:                     3.948
 Date:                Fri, 14 Dec 2018   Prob (F-statistic):             0.0144
-Time:                        20:58:29   Log-Likelihood:                -23.458
+Time:                        21:18:31   Log-Likelihood:                -23.458
 No. Observations:                  22   AIC:                             60.92
 Df Residuals:                      15   BIC:                             68.55
 Df Model:                           6                                         
